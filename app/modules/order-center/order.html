@@ -1,0 +1,108 @@
+<!-- order.html -->
+<meta charset="utf-8">
+<style type="text/css">
+@import "../../less/bootstrap.less";
+@import "../../less/common.less";
+@import "order.less";
+</style>
+<div class="order">
+	<div class="header">
+		<span class="leftTag">北京[<a href="#">更换</a>]</span>
+		<span class="tag">XXX, 欢迎进入ET <a href="#">登录</a> <a href="#">注册</a></span>
+	</div>
+    <div class="content">
+		<div class="title">我的订单</div>
+		<div class="area1">
+		  <div class="status"><label class="label">处理状态</label><div class="col"><input type="radio" ng-model="allorder"/><span class="text">全部订单</span><input type="radio" ng-model="unpay"/><span class="text">未付款</span><input type="radio" ng-model="cancel"/><span class="text">已取消</span></div></div>
+		  <div class="time"><label class="label">下单日期</label><div class="col"><span><input /></span><label>至</label><span><input /></span></div></div>
+		</div>
+		<div class="table">
+			<ul class="tblHeader">
+				<li class="col1">订单信息</li>
+				<li class="col2">金融</li>
+				<li class="col3">收货人</li>
+				<li class="col4">时间</li>
+				<li class="col5">状态</li>
+				<li class="col6">操作</li>
+			</ul>
+			<!-- <div class="orders"> -->
+				<div class="splid"></div>
+				<ul class="orderNo">订单编号:100001</ul>
+				<ul>
+					<li class="col1">
+						<div class="img">
+							<img src="k.png"/>
+							<img src="k.png"/>
+							<img src="k.png"/>
+							<img src="k.png"/>
+						</div>
+					</li>
+					<li class="col2">5288.00</li>
+					<li class="col3">takakiyos</li>
+					<li class="col4">2014年12月23日 18:00</li>
+					<li class="col5">待付款</li>
+					<li class="col6">
+						<div class="button">
+							<button>付款</button>
+							<button>取消订单</button>
+							<button>修改信息</button>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li class="col1"><div class="img"><img src="k.png"/></div></li>
+					<li class="col2">5288.00</li>
+					<li class="col3">takakiyos</li>
+					<li class="col4">2014年12月23日 18:00</li>
+					<li class="col5">已付款付款</li>
+					<li class="col6">
+						<div class="button">
+							<button>评价</button>
+							<button>退换货</button>
+						</div>
+					</li>
+				</ul>
+			<!-- </div> -->
+			<!-- <div class="orders"> -->
+				<div class="splid"></div>
+				<ul class="orderNo">订单编号:100001</ul>
+				<ul>
+					<li class="col1">
+						<div class="img">
+							<img src="k.png"/>
+							<img src="k.png"/>
+							<img src="k.png"/>
+							<img src="k.png"/>
+							<img src="k.png"/>
+						</div>
+					</li>
+					<li class="col2">5288.00</li>
+					<li class="col3">takakiyos</li>
+					<li class="col4">2014年12月23日 18:00</li>
+					<li class="col5">已付款</li>
+					<li class="col6">
+						<div class="button">
+							<button>等待收货</button>
+							<button>取消订单</button>
+						</div>
+					</li>
+				</ul>
+				<ul>
+					<li class="col1"><div class="img"><img src="k.png"/><img src="k.png"/></div></li>
+					<li class="col2">5288.00</li>
+					<li class="col3">takakiyos</li>
+					<li class="col4">2014年12月23日 18:00</li>
+					<li class="col5">已付款付款</li>
+					<li class="col6">
+						<div class="button">
+							<button>评价</button>
+							<button>退换货</button>
+						</div>
+					</li>
+				</ul>
+			<!-- </div> -->
+		</div>
+		<div class="splidPage"><span>第1 2 3 4页<span></div>
+	</div>
+	<div class="footer">版权</div>
+</div>

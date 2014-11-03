@@ -1,0 +1,34 @@
+<!-- bank_rule.html -->
+<style type="text/css">
+@import "../../less/bootstrap.less";
+@import "../../less/common.less";
+@import "bank_rule.less";
+</style>
+<meta charset="utf-8">
+<div class="bankRule">
+	<div class="header">北京<label>[更换]</label><span class="tag">XXX, 欢迎进入ET <a href="#">登录</a> <a href="#">注册</a></span></div>
+	<div class="content">
+		<div class="title"><img class="logo" src="k.png"/><span>| 支付中心</span></div>
+		<div class="box">
+		<div class="bank"><img src="k.png"><a href="#">其他付款方式</a></div>
+		<div class="table">
+			<table>
+				<tr class="tblHeader">
+					<td class="col1">单笔限额(元)</td><td class="col2">每日限额(元)</td><td class="col3">需要满足条件</td><td class="col4">备注</td>
+				</tr>
+				<tr clsss="tblContent">
+					<td class="col1">500</td><td class="col2">1000</td><td class="col3">电子口令卡-未开通手机验证</td><td class="col4" rowspan="3">实际支付额以在银行柜台设置为准，银行热线：XXXX</td>
+				</tr>
+				<tr clsss="tblContent">
+					<td class="col1">2000</td><td class="col2">5000</td><td class="col3">电子口令卡-开通手机验证</td>
+				</tr>
+				<tr clsss="tblContent">
+					<td class="col1">无限额</td><td class="col2">无限额</td><td class="col3">U盾用户</td>
+				</tr>
+			</table>
+		</div>
+		</div>
+		<div class="button"><button ng-model="confirm_pay">确认支付</button></div>
+	</div>
+	<div class="footer"><span>版权</span></div>
+</div>

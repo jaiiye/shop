@@ -1,0 +1,38 @@
+<!-- service.html -->
+<meta charset="utf-8">
+<style type="text/css">
+	@import "../../less/bootstrap.less";
+	@import "../../less/common.less";
+	@import "service.less";
+</style>
+<div class="service">
+	<div class="header">
+		<span class="leftTag">北京[<a href="#">更换</a>]</span>
+		<span class="tag">XXX, 欢迎进入ET <a href="#">登录</a> <a href="#">注册</a></span>
+	</div>
+    <div class="content">
+		<div class="search">
+			<img class="logo" src="K.png"/><div class="input" ><input ng-model="search"/><button>搜索</button></div>
+		</div>
+		<div class="menu_bar">
+			<div class="text">全部分类</div>
+			<div class="nav">首页</div>
+		</div>
+		<div class="form">
+			<div class="form_title">服务单明细</div>
+			<div class="form_content">
+				<div class="productImg"><img src="k.png" /></div>
+				<div class="r1"><span class="c1">服务类型</span><span class="c2"><input type="radio">退货</input><input type="radio">换货</input></span></div>
+				<div class="r2"><span class="c1">提交数量</span><span class="c2"><input type="text" ng-model="quantity"/></span></div>
+				<div class="r3"><span class="c1">申请凭证</span><span class="c2"><input type="checkbox" ng-model="report"/>有检查报告</span></div>
+				<div class="r4"><span class="c1">问题描述</span><span class="c2"><input type="text" ng-model="question"/></span></div>
+				<div class="r5"><span class="c1">图片</span><span class="c2"><button>上传图片</button></span></div>
+				<div class="r7"><span class="c1">联系人</span><span class="c2"><input type="text" ng-model="quantity"/></span></div>
+				<div class="r8"><span class="c1">电话</span><span class="c2"><input type="text" ng-model="quantity"/></span></div>
+				<div class="r9"><span class="c1">地址</span><span class="c2"><input type="text" ng-model="quantity"/></span></div>
+			</div>
+			<div class="button"><button>提交申请</button></div>
+		</div>
+	</div>
+	<div class="footer">版权</div>
+</div>

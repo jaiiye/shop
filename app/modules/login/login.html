@@ -1,0 +1,28 @@
+<!-- login.html -->
+<style type="text/css">
+	@import "../../less/bootstrap.less";
+	@import "../../less/common.less";
+	@import "login.less";
+</style>
+<meta charset="utf-8">
+<div class="login">
+	<div class="header">
+		<span class="tag">您好，欢迎来到ET! [<a href="#">主页</a>] [<a href="#/registe">免费注册</a>]</span>
+	</div>
+	<div class="content">
+		<div class="title"><img class="logo" src="k.png"/><span>| 欢迎登录</span></div>
+		<div class="detail">
+			<span class="text">用户名:</span><span><input na-model="username" /></span>
+			<span class="msg"><label ng-model="username_msg">用户名错误</label></span>
+		</div>
+		<div class="detail">
+			<span class="text">密码:</span><span><input na-model="password" /></span>
+			<a href="#">忘记密码?</a>
+		</div>
+		<div class="detail">
+			<span class="label" /><input type="checkbox">自动登录</input>
+		</div>
+		<div class="button" /><button ng-model="login">登录</button></div>
+	</div>
+	<div class="footer"><span>版权</span></div>
+</div>

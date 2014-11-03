@@ -1,0 +1,37 @@
+<!-- registe.html -->
+<style type="text/css">
+	@import "../../less/bootstrap.less";
+	@import "../../less/common.less";
+	@import "registe.less";
+</style>
+<meta charset="utf-8">
+<div class="registe">
+	<div class="header">
+		<span class="tag">您好，欢迎来到ET! [<a href="#">主页</a>] [<a href="#/registe">免费注册</a>]</span>
+	</div>
+	<div class="content">
+		<div class="title"><img class="logo" src="k.png"/><span>| 欢迎注册</span></div>
+		<div class="resisteTag">我已注册，现在<a class="loginhref" href="#/login">登录</a></div>
+			<div class="detail">
+				<span class="text">用户名:</span><span><input na-model="username" /></span>
+				<span class="msg"><label ng-model="username_msg">用户名错误</label></span>
+			</div>
+			<div class="detail">
+				<span class="text">设置密码:</span><span><input na-model="password" /></span>
+				<span class="msg"><label ng-model="password_msg">密码太简单</label></span>
+			</div>
+			<div class="detail">
+				<span class="text">确认密码:</span><span><input na-model="password2" /></span>
+				<span class="msg"><label ng-model="password2_msg">确认密码错误</label></span>
+			</div>
+			<div class="detail">
+				<span class="text">手机号:</span><span><input na-model="phonenumber" /></span>
+				<span class="msg"><label ng-model="phonenumber_msg">手机号错误</label></span>
+			</div>
+			<div class="detail">
+				<span class="text">验证码:</span><span><input ng-model="vertifycode" /><button class="vertifyBtn" ng-model="button_msgvitefy"><span class="vbtext">获取短信验证码</span></button></span>
+			</div>
+			<div class="button" /><button ng-model="login">注册</button></div>
+	</div>
+	<div class="footer"><span>版权</span></div>
+</div>
