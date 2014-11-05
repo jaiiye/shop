@@ -1,0 +1,63 @@
+<!-- shopping_car.html -->
+<div class="shoppingCar">
+	<div class="header">
+		<span class="leftTag">北京[<a href="#">更换</a>]</span>
+		<span class="tag">{{userId}}, 欢迎进入ET <a href="#/login">登录</a> <a href="#/registe">注册</a></span>
+	</div>
+    <div class="content">
+		<div class="search">
+			<img class="logo" ng-src="{{img_logo}}"/><div class="input" ><input ng-model="search"/><button>搜索</button></div>
+		</div>
+		<div class="pageTitle"><span class="text">购物车</span></div>
+		<div class="menu_bar">
+			<div class="text">全部分类</div>
+			<div class="nav">首页</div>
+		</div>
+		<div class="main">
+			<div class="producteList">			
+				<ul class="tableHead">
+					<li class="col1">
+						<span ng-click="allSelected()">{{all_select_text}}</span>
+						<span ng-click="allCanceled()">{{all_cancel_text}}</span>
+					</li>
+					<li class="col2">编号</li>
+					<li class="col3">图片</li>
+					<li class="col4">描述</li>
+					<li class="col5">单价</li>
+					<li class="col6">数量</li>
+					<li class="col7">操作</li>
+				</ul>
+				<ul ng-repeat="item in items">
+					<li class="col1">
+						<input  class="checkbox" type="checkbox" ng-checked="check" ng-model="checkop"/>
+					</li>
+					<li class="col2">
+						{{item.productId}}
+					</li>
+					<li class="col3">
+						<a href="{{item.productURL}}/{{item.productId}}"><img ng-src="{{item.productImg[0]}}" /></a>
+					</li>
+					<li class="col4">
+						{{item.productName}}
+					</li>
+					<li class="col5">
+						{{item.productPrice | number:2}}
+					</li>
+					<li class="col6">
+						<input type="text" class="smallinput" ng-model="item.quantity" ng-blur="checkQuantity($index)"/>
+					</li>
+					<li class="col7">
+						<span ng-show="checkop">
+							<button ng-click="delete($index,item.productId)">删除</button>
+						</span>
+						<span ng-hide="checkop">
+							<button>删除</button>
+						</span>
+					</li>
+				</ul>
+			</div>
+		  <div class="totalPrices"><span>总价:</span><span>{{totalProductPrice | number:2 }}</span><span>元</span><button>去结算</button></div>
+		</div>
+  </div>
+  <div class="footer">版权</div>
+</div>
