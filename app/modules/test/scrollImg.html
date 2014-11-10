@@ -1,0 +1,17 @@
+<!-- 翻转图片 -->
+<div class="home">
+<div class="main">
+<div class="img_scroll">
+    <div ng-controller="PostListController">
+        <carousel interval="myInterval">
+            <slide ng-repeat="slide in slides" active="slide.active">
+                <img ng-src="{{slide.image}}" style="margin:auto;">
+                <div class="carousel-caption">
+                    <p>{{slide.text}}</p>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+</div>
+</div>
+</div>
