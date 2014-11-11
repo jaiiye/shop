@@ -1,0 +1,24 @@
+[
+	{
+		"addressId": "0",
+		"consignee": "张三",
+		"contury": "中国",
+		"state": "北京",
+		"city": "朝阳",
+		"zone": "高碑店",
+		"street": "高碑店新村",
+		"phoneNumber": "18911056732",
+		"postNumber": "123607"
+	},
+	{
+		"addressId": "1",
+		"consignee": "张三",
+		"contury": "中国",
+		"state": "北京",
+		"city": "朝阳",
+		"zone": "高碑店",
+		"street": "高碑店新村",
+		"phoneNumber": "18911056732",
+		"postNumber": "123607"
+	}
+]

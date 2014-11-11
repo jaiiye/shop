@@ -1,0 +1,110 @@
+<div class="orderView">
+	<div class="header">
+		<span class="leftTag">北京[<a href="#">更换</a>]</span>
+		<span class="tag">{{userId}}, 欢迎进入ET <a href="#">登录</a> <a href="#">注册</a></span>
+	</div>
+    <div class="content">
+    <form name="orderInfoForm" ng-submit="goPay()">
+    	<div class="logoImg"><img ng-src="{{img_logo}}"/></div>
+		<div class="title">确认订单信息</div>
+		<div class="area1">
+			<div class="consigneeInfo">
+				<div class="">
+					<div class="subtitle">
+						收信人信息
+					</div>
+					
+				</div>
+
+				<div class="infoList">
+					<div class="paddingLeft40">
+						<div class="radio" >
+								<div>收货人:<span>{{consignee}}</span></div>
+								<div>电话号码:<span>{{phoneNumber}}</span></div>
+								<div>地址:
+								<span>{{state}}</span>
+								<span>{{city}}</span>
+								<span>{{zone}}</span>
+								<span>{{street}}</span>
+								</div>
+								<div>邮编:<span>{{postNumber}}</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div>END consignee</div> -->
+			<div class="payWay">
+				<div class="subtitle">支付方式</div>
+				<div class="paddingLeft40">
+					<div class="radio">{{payWay | payWayFilter }}
+					</div>
+				</div>
+			</div>
+			<!-- <div>END payWay</div> -->
+			<div class="invoice">
+				<div class="subtitle">发票信息</div>				
+				<div class="paddingLeft40" >
+					{{invoiceHead | invoiceHeadFilter }}
+					<div ng-show="invoiceHead">
+						抬头:{{invoiceHeadName}}
+						<div>
+						内容:{{invoiceContent | invoiceContentFilter }}
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div>END invoice</div> -->
+		</div>
+		<!-- <div>END area1</div> -->
+		<div class="hr"></div>
+		<div class="area2">
+			<div class="">
+				<div class="subtitle">商品清单</div><span class="back"><a href="#/orderCheck">修改订单信息</a></span>
+			</div>
+			<div class="table">
+				<ul class="tblHeader">
+					<li class="col1">商品编号</li>
+					<li class="col2">图片</li>
+					<li class="col3">描述</li>
+					<li class="col4">单价</li>
+					<li class="col5">数量</li>
+				</ul>
+				<!-- <div class="orders"> -->
+					<div class="splid"></div>
+					<ul ng-repeat="product in products">
+						<li class="col1">
+							{{product.productId}}
+						</li>
+						<li class="col2">
+							<a href="{{product.productURL}}/{{product.productId}}"><img class="smallImg" ng-src="{{product.productImg[0]}}" /></a>
+						</li>
+						<li class="col3">
+							{{product.productName}}
+						</li>
+						<li class="col4">
+							{{product.productPrice | number:2}}
+						</li>
+						<li class="col5">
+							{{product.quantity}}
+						</li>
+					</ul>
+				<!-- </div> -->
+			</div>
+			<!-- END table -->
+			<div class="subfooter">
+				<div class="subtotal">{{totalQuantity}}件商品，商品金额:{{subPrice | number:2}}元</div>
+				<div class="fare">运费:{{fare | number:2}}元</div>
+				<div class="total">实际支付金额:{{subPrice + fare | number:2}}元</div>
+			</div>
+			<div class="hr"></div>
+			<div class="button">
+				<input class="submit" type="submit" value="支付"/>
+			</div>
+			</div>
+		<!-- <div>END area2</div> -->
+	</div>
+	<!-- <div>END content</div> -->
+	</form>
+	<div class="clearStyle"></div>
+	<div class="footer">版权</div>
+</div>

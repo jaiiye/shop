@@ -1,0 +1,25 @@
+<div class="payCenter">
+	<div class="header">
+		<span class="leftTag">北京[<a href="#">更换</a>]</span>
+		<span class="tag">{{userId}}, 欢迎进入ET <a href="#">登录</a> <a href="#">注册</a></span>
+	</div>
+	{{bankRadio}}
+	<div class="content">
+	<form ng-submit="submit()">
+		<div class="title"><img class="logo" ng-src=""/><span class="label">| 支付中心</span></div>
+		<div class="bankTag"><label class="label">银行支付<label></div>
+			<div class="bank">
+				<ul class="ul" ng-repeat="bank in banks">
+					<li>
+						<div class="bg">
+						<input class="radio" type="radio" ng-model="bank" name="bankRadio" id="{{bank.bankId}}" value="{{bank.bankId}}" required >
+						<label for="{{bank.bankId}}"><img ng-src="{{bank.bankImg}}" /></label>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="button"><input class="pay" type="submit" value="支付"></div>
+	</form>
+	</div>
+	<div class="footer"><span>版权</span></div>
+</div>

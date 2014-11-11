@@ -1,0 +1,22 @@
+<script language=javascript> 
+function showclasscheck(checktype) 
+{ 
+var objDiv = document.getElementById ("checkclass"); 
+if (checktype==1) 
+objDiv.style.display = "block"; 
+else 
+objDiv.style.display = "none"; 
+}
+
+</script> 
+<body> 
+<table border=0> 
+<tr> 
+<TD class=tablebody1> 
+<INPUT type=radio checked name=userclass value=0 onclick="showclasscheck(0)">隐藏 
+<INPUT type=radio name=userclass value=1 onclick="showclasscheck(1)" checked>显示</TD> 
+</TR> 
+</tr> 
+</table> 
+<div id="checkclass" align=center>测试区域</div> 
+</body> 

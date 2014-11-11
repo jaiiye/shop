@@ -1,0 +1,58 @@
+{
+	"addressId": "0",
+	"consignee": "张三",
+	"contury": "中国",
+	"state": "北京",
+	"city": "朝阳",
+	"zone": "高碑店",
+	"street": "高碑店新村",
+	"phoneNumber": "18911056732",
+	"postNumber": "123607",
+
+	"payWay":"0",
+	"invoiceHead":"1",
+	"invoiceHeadName":"ET科技",
+	"invoiceContent":"2",
+	
+	"productList": [
+		{
+		"productId":"01000001",
+		"quantity":1,
+		"productCategoryId": "01000",
+		"productName": "联想电脑Z10",
+		"productURL": "#/detail",
+		"productImg": [
+		    "/img/1234.jpg",
+		    "/img/k.png",
+		    "/img/mask.png"
+		],
+		"productPrice": 3560.50
+		},
+		{
+			"productId":"01000002",
+			"quantity":2,
+			"productCategoryId": "01000",
+			"productName": "联想电脑Z10",
+			"productURL": "#/detail",
+			"productImg": [
+			    "/img/k.png",
+			    "/img/1234.jpg",
+			    "/img/mask.png"
+			],
+			"productPrice": 3560.00
+		},
+		{
+			"productId":"01001001",
+			"quantity":3,
+			"productCategoryId": "01000",
+			"productName": "联想电脑Z10",
+			"productURL": "#/detail",
+			"productImg": [
+				"/img/mask.png",
+			    "/img/k.png",
+			    "/img/1234.jpg"
+			],
+			"productPrice": 3560.00
+		}
+	]
+}
